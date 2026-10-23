@@ -1,7 +1,9 @@
 Network Intrusion Detection System (NIDS) using Machine Learning
+
 ​Executive Summary
 ​The Network Intrusion Detection System (NIDS) is an advanced machine learning framework developed to identify, classify, and mitigate cyber threats across enterprise network architectures. As modern network security environments evolve, traditional rule-based and signature-matching detection techniques often fall short against sophisticated, zero-day attacks and dynamic payload variations.
 ​This project implements an automated, high-precision intrusion detection engine using Python and Scikit-learn. By leveraging data preprocessing techniques, dynamic feature normalization (StandardScaler), categorical label encoding, and ensemble decision trees (RandomForestClassifier), the system analyzes high-throughput network traffic logs to separate legitimate connections from malicious intrusions with minimal false-positive rates.
+
 ​Key System Features
 ​End-to-End Data Pipeline: Streamlined pipeline for reading raw network connection logs, cleaning missing values, and formatting inputs for model ingestion.
 ​Categorical Feature Encoding: Automated translation of string-based protocol properties (e.g., TCP, UDP, ICMP), service flags, and connection statuses into numerical representations via LabelEncoder.
@@ -9,6 +11,8 @@ Network Intrusion Detection System (NIDS) using Machine Learning
 ​Ensemble Machine Learning Architecture: Uses an ensemble of decision trees (RandomForestClassifier) configured with multi-threading optimization (n_estimators=100) to yield high stability and resistance to dataset noise and overfitting.
 ​Multi-Metric Evaluation: Comprehensive performance diagnosis featuring Precision, Recall, F1-Score, micro/macro averages, and graphical Confusion Matrix visualization via Seaborn/Matplotlib.
 ​Technical Stack & Dependencies
+
+
 ​Programming Language & Runtime
 ​Language: Python 3.8+
 ​Environment: Google Colab / Jupyter Notebook / Local Python Virtual Environments (venv, conda)
